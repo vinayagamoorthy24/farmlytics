@@ -1,0 +1,262 @@
+[
+  {
+    "crop_id": "rice_paddy",
+    "crop_name": "Rice (Paddy)",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/rice_paddy.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "wheat",
+    "crop_name": "Wheat",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/wheat.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "maize",
+    "crop_name": "Maize (Corn)",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/maize.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "sorghum",
+    "crop_name": "Sorghum (Jowar)",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/sorghum.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "pearl_millet",
+    "crop_name": "Pearl Millet (Bajra)",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/pearl_millet.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "finger_millet",
+    "crop_name": "Finger Millet (Ragi)",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/finger_millet.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "groundnut",
+    "crop_name": "Groundnut (Peanut)",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/groundnut.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "sesame",
+    "crop_name": "Sesame (Gingelly)",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/sesame.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "sunflower",
+    "crop_name": "Sunflower",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/sunflower.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "cotton",
+    "crop_name": "Cotton",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/cotton.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "sugarcane",
+    "crop_name": "Sugarcane",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/sugarcane.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "black_gram",
+    "crop_name": "Black Gram (Urad Dal)",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/black_gram.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "green_gram",
+    "crop_name": "Green Gram (Moong Dal)",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/green_gram.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "red_gram",
+    "crop_name": "Red Gram (Toor/Arhar Dal)",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/red_gram.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "soybean",
+    "crop_name": "Soybean",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/soybean.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "tomato",
+    "crop_name": "Tomato",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/tomato.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "onion",
+    "crop_name": "Onion",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/onion.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "chilli",
+    "crop_name": "Chilli (Pepper)",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/chilli.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "banana",
+    "crop_name": "Banana",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/banana.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "turmeric",
+    "crop_name": "Turmeric",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/turmeric.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "potato",
+    "crop_name": "Potato",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/potato.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "coconut",
+    "crop_name": "Coconut",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/coconut.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "horsegram",
+    "crop_name": "Horse Gram",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/horsegram.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "ginger",
+    "crop_name": "Ginger",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/ginger.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "mustard",
+    "crop_name": "Mustard (Rapeseed)",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/mustard.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  },
+  {
+    "crop_id": "default",
+    "crop_name": "Default Fallback Crop",
+    "image_source": "Custom Generated for Farmlytics",
+    "creator": "Farmlytics Project Team / Antigravity AI",
+    "license": "Custom Project Original License (Free for Public Demonstration & GitHub Reuse)",
+    "commercial_use_permitted": true,
+    "local_asset_path": "frontend/assets/crops/default.png",
+    "verification_status": "VERIFIED_LEGALLY_SAFE"
+  }
+]

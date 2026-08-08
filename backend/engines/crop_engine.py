@@ -167,6 +167,7 @@ def evaluate_crop_risk(
             "crop": crop.name,
             "crop_id": crop.id,
             "crop_name": crop.name,
+            "image": crop.raw.get("image", f"assets/crops/{crop.id}.png"),
             "rank": None,
             "overall_score": suitability,
             "scores": {

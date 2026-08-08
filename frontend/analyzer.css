@@ -98,7 +98,7 @@
   transform: translateY(-1px);
 }
 
-/* --- Results Section & Crop Cards --- */
+/* --- Results Section & Recommended Crop Cards --- */
 .results-section {
   display: flex;
   flex-direction: column;
@@ -107,7 +107,7 @@
 
 .results-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1.5rem;
 }
 
@@ -115,58 +115,178 @@
   background: #ffffff;
   border: 1px solid var(--slate-200);
   border-radius: var(--radius-md);
-  padding: 1.5rem;
+  overflow: hidden;
   box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .crop-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
   box-shadow: var(--shadow-md);
 }
 
-.crop-card__header {
-  display: flex;
-  justify-content: space-between;
+/* Card Banner Image Container */
+.crop-card__image-container {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background-color: var(--slate-100);
+  overflow: hidden;
+}
+
+.crop-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Rank Badge Overlay */
+.crop-card__rank-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: inline-flex;
   align-items: center;
-  margin-bottom: 1rem;
+  gap: 6px;
+  background-color: var(--green-700);
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.crop-card__rank-badge .rank-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+  font-weight: 800;
+}
+
+.crop-card__rank-badge--best {
+  background-color: var(--green-800);
+  padding: 4px 10px;
+}
+
+/* Card Content Body */
+.crop-card__body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .crop-card__title {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 700;
+  color: var(--slate-900);
+  margin-bottom: 0.75rem;
+}
+
+/* Score Donut & Label */
+.crop-card__score-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.crop-card__donut {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.donut-svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.donut-bg {
+  fill: none;
+  stroke: var(--slate-200);
+  stroke-width: 3.8;
+}
+
+.donut-fill {
+  fill: none;
+  stroke-width: 3.8;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.5s ease;
+}
+
+.donut-text {
+  position: absolute;
+  font-size: 0.75rem;
+  font-weight: 800;
   color: var(--slate-900);
 }
 
-.crop-card__badge {
-  padding: 0.25rem 0.75rem;
-  border-radius: var(--radius-full);
-  font-size: 0.8rem;
+.crop-card__suitability-label {
+  font-size: 0.95rem;
   font-weight: 700;
 }
 
-.badge--safe {
-  background-color: var(--green-100);
+.label--high { color: var(--green-700); }
+.label--suitable { color: var(--green-600); }
+.label--moderate { color: var(--amber-700); }
+.label--less { color: var(--red-600); }
+
+.crop-card__desc {
+  font-size: 0.875rem;
+  color: var(--slate-600);
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+
+/* Action Buttons */
+.crop-card__actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.crop-card__actions button {
+  flex: 1;
+  padding: 0.6rem 0.5rem;
+  background-color: #ffffff;
+  border: 1px solid var(--slate-300);
+  border-radius: 6px;
+  color: var(--green-700);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  transition: all 0.2s ease;
+}
+
+.crop-card__actions button:hover {
+  background-color: var(--green-50);
+  border-color: var(--green-600);
   color: var(--green-800);
 }
 
-.badge--moderate {
-  background-color: var(--amber-50);
-  color: var(--amber-700);
-}
-
-.badge--high {
-  background-color: var(--red-50);
-  color: var(--red-600);
-}
-
-.crop-card__stat--msp {
-  background: var(--green-50);
-  color: var(--green-800);
-  border: 1px solid var(--green-200);
-  font-weight: 700;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
+.crop-card__actions button.is-selected {
+  background-color: var(--green-700);
+  border-color: var(--green-700);
+  color: #ffffff;
 }
 
 /* --- Sticky Comparison Bar & Modal --- */
@@ -202,7 +322,7 @@
   max-width: 900px;
   width: 100%;
   max-height: 85vh;
-  overflow-y: auto;
+  overflow-y. auto;
   padding: 2rem;
   box-shadow: var(--shadow-lg);
 }
