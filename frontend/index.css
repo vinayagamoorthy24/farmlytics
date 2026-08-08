@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Farmlytics — Landing Page Styles (index.html)
+   ========================================================================== */
+
+.hero {
+  position: relative;
+  padding: 6rem 5% 10rem 5%;
+  background: linear-gradient(to right, rgba(248, 250, 252, 1) 20%, rgba(248, 250, 252, 0.85) 50%, rgba(248, 250, 252, 0) 100%), 
+              url('bg_image.jpg') center/cover no-repeat;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--slate-900);
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 span {
+  color: var(--green-700);
+}
+
+.title-divider {
+  width: 80px;
+  height: 3px;
+  background-color: var(--green-600);
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: var(--slate-700);
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--green-700);
+  color: var(--white);
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary i {
+  transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--green-800);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(21, 128, 61, 0.3);
+}
+
+.btn-primary:hover i {
+  transform: translateX(4px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(21, 128, 61, 0.3);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 5% 6rem 5%;
+  }
+}

@@ -1,0 +1,226 @@
+/* ==========================================================================
+   Farmlytics — Analyzer Dashboard Styles (analyzer.html)
+   ========================================================================== */
+
+.analyzer-body {
+  background-color: var(--slate-50);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.analyzer-layout {
+  padding: 2rem 4%;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.analyzer-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 992px) {
+  .analyzer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Sidebar Form Panel --- */
+.analyzer-sidebar {
+  background: #ffffff;
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.sidebar-header {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--slate-100);
+  padding-bottom: 1rem;
+}
+
+.sidebar-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--slate-900);
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--slate-700);
+  margin-bottom: 0.5rem;
+}
+
+.form-select, .form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--slate-300);
+  border-radius: var(--radius-sm);
+  background-color: #ffffff;
+  color: var(--slate-800);
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-select:focus, .form-input:focus {
+  outline: none;
+  border-color: var(--green-600);
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.15);
+}
+
+.btn-analyze {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  background-color: var(--green-700);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  margin-top: 1rem;
+}
+
+.btn-analyze:hover {
+  background-color: var(--green-800);
+  transform: translateY(-1px);
+}
+
+/* --- Results Section & Crop Cards --- */
+.results-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.crop-card {
+  background: #ffffff;
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.crop-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.crop-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.crop-card__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--slate-900);
+}
+
+.crop-card__badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.badge--safe {
+  background-color: var(--green-100);
+  color: var(--green-800);
+}
+
+.badge--moderate {
+  background-color: var(--amber-50);
+  color: var(--amber-700);
+}
+
+.badge--high {
+  background-color: var(--red-50);
+  color: var(--red-600);
+}
+
+.crop-card__stat--msp {
+  background: var(--green-50);
+  color: var(--green-800);
+  border: 1px solid var(--green-200);
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* --- Sticky Comparison Bar & Modal --- */
+.sticky-compare-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border-top: 1px solid var(--slate-300);
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+  z-index: var(--z-sticky);
+}
+
+.compare-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: var(--z-modal);
+  padding: 2rem;
+}
+
+.compare-modal-content {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  max-width: 900px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+.compare-table th, .compare-table td {
+  padding: 0.875rem 1rem;
+  border-bottom: 1px solid var(--slate-200);
+  text-align: left;
+}
+
+.compare-table th {
+  background-color: var(--slate-100);
+  font-weight: 700;
+  color: var(--slate-900);
+}
