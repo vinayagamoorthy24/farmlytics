@@ -4,20 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="AgroRisk Advisor — Legal Disclaimer, Terms of Use, Privacy Policy, and Data Attribution." />
-    <title>Terms & Disclaimer — AgroRisk Advisor</title>
+    <meta name="description" content="Farmlytics — Legal Disclaimer, Terms of Use, Privacy Policy, and Data Attribution." />
+    <title>Terms & Disclaimer — Farmlytics</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="styles.css?v=8.0" />
-
-
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=9.0" />
 </head>
 
 <body>
@@ -25,16 +21,17 @@
     <header class="site-header" role="banner">
         <nav class="nav" aria-label="Primary navigation">
             <div class="nav__brand">
-                <a href="index.html" style="text-decoration: none; display: flex; align-items: center;">
-                    <span class="nav__title">AgroRisk Advisor</span>
+                <a href="index.html" class="nav__brand-link">
+                    <span class="nav__brand-text">
+                        <span class="nav__brand-bold">FARMLYTICS</span>
+                    </span>
                 </a>
             </div>
             <ul class="nav__links" role="list">
                 <li><a href="index.html" class="nav__link">Home</a></li>
                 <li><a href="analyzer.html" class="nav__link">Analyzer</a></li>
-                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="about.html" class="nav__link">About Us</a></li>
                 <li><a href="terms.html" class="nav__link nav__link--active" aria-current="page">Terms</a></li>
-
             </ul>
         </nav>
     </header>
@@ -42,150 +39,47 @@
     <!-- ========== TERMS CONTENT ========== -->
     <main class="page-container page-container--narrow">
         <h1 class="page-heading">Legal Disclaimer & Terms of Use</h1>
-        <p class="page-lead">Version 8.0 — Effective April 2026</p>
+        <p class="page-lead">Version 9.0 — Effective 2026</p>
 
         <!-- Mandatory Advisory Disclaimer -->
         <section class="doc-section">
-            <div class="alert alert--warning" style="margin-bottom: var(--s-4);">
+            <div class="alert alert--warning mb-4">
                 <strong>⚠ IMPORTANT: ADVISORY ONLY — NO LEGAL SANCTITY</strong>
-                <p>The information provided by AgroRisk Advisor is for <strong>general reference and informational
-                        purposes only</strong>. It does not possess any legal sanctity and should not be construed as
-                    professional agricultural advice. The Government of India and the developers of this tool are
-                    <strong>not responsible for any losses, damages, or adverse outcomes</strong> resulting from
-                    decisions made based on this tool's recommendations.
-                </p>
+                <p>The information provided by Farmlytics is for <strong>general reference and informational purposes only</strong>. It does not possess legal sanctity and should not be construed as financial or binding agricultural advice.</p>
             </div>
         </section>
 
         <section class="doc-section">
             <h2 class="doc-heading">1. Nature of Advisory</h2>
             <ul class="doc-list">
-                <li>AgroRisk Advisor is a <strong>heuristic, rule-based decision support tool</strong>. It provides
-                    indicative risk assessments based on broad geographical averages, not field-level precision data.
-                </li>
-                <li>This tool does <strong>NOT</strong> replace the necessity for on-ground evaluation by qualified
-                    agricultural extension officers, Krishi Vigyan Kendra (KVK) experts, or soil testing laboratories.
-                </li>
-                <li>Recommendations are generated using static datasets and should be cross-verified with the latest
-                    advisories from your <strong>State Agricultural University (SAU)</strong>, <strong>ICAR Research
-                        Stations</strong>, and <strong>District Agriculture Officer</strong>.</li>
-                <li>As per the <strong>Information Technology Act, 2000 (Section 79)</strong> and relevant amendments,
-                    this platform serves as an intermediary and is not liable for third-party data inaccuracies.</li>
+                <li>Farmlytics is a <strong>heuristic, rule-based decision support tool</strong> providing indicative risk assessments based on geographical and climate data.</li>
+                <li>This tool does <strong>NOT</strong> replace field evaluations by agricultural extension officers, Krishi Vigyan Kendra (KVK) experts, or soil testing labs.</li>
             </ul>
         </section>
 
         <section class="doc-section">
             <h2 class="doc-heading">2. Data Sources & Attribution</h2>
-            <p>AgroRisk Advisor uses data from the following verified public sources. All data is used in compliance with
-                the respective open data licenses:</p>
+            <p>Farmlytics uses data from verified public sources:</p>
             <ul class="doc-list mt-2">
-                <li><strong>FAO Irrigation & Drainage Paper 56</strong> — Crop evapotranspiration coefficients and water
-                    requirement ranges (Tables 5, 11, 12).</li>
-                <li><strong>India Meteorological Department (IMD)</strong> — District-level rainfall normals, seasonal
-                    distribution, and coefficient of variation data from the Rainfall Monitoring Scheme.</li>
-                <li><strong>Indian Council of Agricultural Research (ICAR)</strong> — 15-zone agro-climatic
-                    classifications, crop calendars, rotation advisories, and soil-site suitability criteria.</li>
-                <li><strong>National Bureau of Soil Survey & Land Use Planning (NBSS-LUP)</strong> — District-level soil
-                    type and texture classifications.</li>
-                <li><strong>Agmarknet / PIB / CACP</strong> — Market volatility classifications and Minimum Support
-                    Price (MSP) data for the 2025-26 marketing season.</li>
-                <li><strong>NASA POWER Climatology (2001-2020)</strong> — Temperature normals and seasonal averages for
-                    heat/cold stress modelling.</li>
-                <li><strong>data.gov.in</strong> — Open Government Data Platform India, supplementary agricultural
-                    statistics.</li>
+                <li><strong>FAO Irrigation & Drainage Paper 56</strong> — Crop evapotranspiration coefficients.</li>
+                <li><strong>India Meteorological Department (IMD)</strong> — District rainfall normals.</li>
+                <li><strong>ICAR</strong> — Agro-climatic classifications and crop calendars.</li>
+                <li><strong>Agmarknet / PIB</strong> — Commodity spot data and MSP trends.</li>
             </ul>
         </section>
 
         <section class="doc-section">
-            <h2 class="doc-heading">3. Limitations</h2>
-            <ul class="doc-list doc-list--x">
-                <li><strong>Soil Health:</strong> Does NOT replace physical soil testing. Variables like pH, electrical
-                    conductivity (EC), organic carbon, and micro-nutrient profiles are not factored.</li>
-                <li><strong>Sub-district Micro-climates:</strong> Uses district-level rainfall averages (IMD normals),
-                    which may not accurately reflect hyper-local rain shadow zones, valley effects, or urban heat
-                    islands.</li>
-                <li><strong>Market Pricing:</strong> Does NOT forecast real-time market prices or account for specific
-                    mandi trends. MSP data is sourced from CACP notifications and may not reflect actual procurement
-                    availability.</li>
-                <li><strong>Pest & Disease:</strong> Current prototype does not model pest/disease pressure beyond
-                    rotation-based family conflicts.</li>
-                <li><strong>Expert Consultation:</strong> Does NOT replace on-ground agricultural experts, state
-                    extension advisories, or KVK field visits.</li>
-            </ul>
-        </section>
-
-        <section class="doc-section">
-            <h2 class="doc-heading">4. Privacy Policy</h2>
+            <h2 class="doc-heading">3. Privacy Policy</h2>
             <ul class="doc-list">
-                <li>AgroRisk Advisor operates as an <strong>offline-first thick client</strong>. No personally
-                    identifiable information (PII) is collected, stored, or transmitted.</li>
-                <li>All analysis computation is performed entirely within the user's browser. No crop selection or
-                    district information is sent to any external server.</li>
-                <li>The application does not use cookies, analytics trackers, or third-party advertising SDKs.</li>
-                <li>In compliance with the <strong>Digital Personal Data Protection Act, 2023</strong>, no consent
-                    mechanism is required as no personal data is processed.</li>
-            </ul>
-        </section>
-
-        <section class="doc-section">
-            <h2 class="doc-heading">5. Accessibility Statement</h2>
-            <p>This tool strives to comply with <strong>WCAG 2.1 Level AA</strong> standards and the accessibility
-                requirements outlined in <strong>GIGW 3.0 (Guidelines for Indian Government Websites)</strong>. If you
-                encounter any accessibility barriers, please report them via the feedback mechanism on the About page.
-            </p>
-        </section>
-
-        <section class="doc-section">
-            <h2 class="doc-heading">6. Version History</h2>
-            <table style="width: 100%; border-collapse: collapse; margin-top: var(--s-2);">
-                <thead>
-                    <tr style="border-bottom: 2px solid var(--card-border); text-align: left;">
-                        <th style="padding: var(--s-1);">Version</th>
-                        <th style="padding: var(--s-1);">Date</th>
-                        <th style="padding: var(--s-1);">Changes</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr style="border-bottom: 1px solid var(--card-border);">
-                        <td style="padding: var(--s-1); font-family: var(--font-mono);">v8.0</td>
-                        <td style="padding: var(--s-1);">April 2026</td>
-                        <td style="padding: var(--s-1);">Seasonal rainfall fix, soil-site suitability scoring, MSP
-                            integration, legal disclaimer, GIGW 3.0 compliance.</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid var(--card-border);">
-                        <td style="padding: var(--s-1); font-family: var(--font-mono);">v7.5</td>
-                        <td style="padding: var(--s-1);">March 2026</td>
-                        <td style="padding: var(--s-1);">Liebig's Law aggregation, climate engine overhaul, confidence
-                            scoring.</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: var(--s-1); font-family: var(--font-mono);">v7.0</td>
-                        <td style="padding: var(--s-1);">Feb 2026</td>
-                        <td style="padding: var(--s-1);">Initial public release with FAO + IMD + ICAR data integration.
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section class="doc-section">
-            <h2 class="doc-heading">7. Contact & Feedback</h2>
-            <p>For issues, data corrections, or accessibility concerns:</p>
-            <ul class="doc-list mt-2">
-                <li><strong>Email:</strong> feedback@agroriskadvisor.gov.in</li>
-                <li><strong>Grievance Portal:</strong> <a href="https://pgportal.gov.in" target="_blank"
-                        rel="noopener noreferrer">CPGRAMS — Centralized Public Grievance Redress and Monitoring
-                        System</a></li>
-                <li><strong>Data Version:</strong> v8.0 | Last verified: April 2026</li>
+                <li>No personally identifiable information (PII) is collected or stored.</li>
+                <li>All analysis requests are processed securely.</li>
             </ul>
         </section>
     </main>
 
     <!-- ========== FOOTER ========== -->
     <footer class="site-footer" role="contentinfo">
-        <p class="site-footer__text">&copy; 2026 AgroRisk Advisor &middot; Data: FAO &middot; IMD &middot; ICAR
-            &middot;
-            Agmarknet &middot; data.gov.in</p>
+        <p class="site-footer__text">&copy; 2026 Farmlytics &middot; Data: FAO &middot; IMD &middot; ICAR &middot; Agmarknet &middot; data.gov.in</p>
     </footer>
     <!-- Shared Scripts -->
     <script src="shared.js"></script>
