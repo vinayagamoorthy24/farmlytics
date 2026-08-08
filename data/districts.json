@@ -1,0 +1,914 @@
+[
+  {
+    "id": "ariyalur",
+    "district": "Ariyalur",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 900,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "Cauvery Delta Zone",
+    "soil_type": "Black Cotton Soil (Vertisol)",
+    "soil_drainage": "Poor",
+    "seasonal_rainfall_share": {
+      "kharif": 0.35,
+      "rabi": 0.5,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 30.0,
+      "rabi": 26.5,
+      "summer": 33.5
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "clay",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 24
+  },
+  {
+    "id": "chengalpattu",
+    "district": "Chengalpattu",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 1028,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "North Eastern Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.3,
+      "rabi": 0.55,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 30.5,
+      "rabi": 26.0,
+      "summer": 32.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 24
+  },
+  {
+    "id": "chennai",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 1400,
+    "rainfall_variability": "high",
+    "agro_climatic_zone": "North Eastern Zone",
+    "soil_type": "Alluvial Soil",
+    "soil_drainage": "Moderate",
+    "seasonal_rainfall_share": {
+      "kharif": 0.25,
+      "rabi": 0.6,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 31.0,
+      "rabi": 26.5,
+      "summer": 33.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 33
+  },
+  {
+    "id": "coimbatore",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 666,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "Western Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.45,
+      "rabi": 0.4,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 27.0,
+      "rabi": 24.5,
+      "summer": 31.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 25
+  },
+  {
+    "id": "cuddalore",
+    "district": "Cuddalore",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 1183,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "North Eastern Zone",
+    "soil_type": "Alluvial Soil",
+    "soil_drainage": "Moderate",
+    "seasonal_rainfall_share": {
+      "kharif": 0.3,
+      "rabi": 0.55,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 30.5,
+      "rabi": 26.0,
+      "summer": 32.5
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 25
+  },
+  {
+    "id": "dharmapuri",
+    "district": "Dharmapuri",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 942,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "North Western Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.45,
+      "rabi": 0.4,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 28.5,
+      "rabi": 25.0,
+      "summer": 32.5
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "high",
+    "rainfall_cv_percent": 25
+  },
+  {
+    "id": "dindigul",
+    "district": "Dindigul",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 945,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "Southern Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.4,
+      "rabi": 0.45,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 28.5,
+      "rabi": 25.5,
+      "summer": 32.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "high",
+    "rainfall_cv_percent": 25
+  },
+  {
+    "id": "erode",
+    "district": "Erode",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 720,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "Western Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.45,
+      "rabi": 0.4,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 28.0,
+      "rabi": 25.0,
+      "summer": 32.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 24
+  },
+  {
+    "id": "kallakurichi",
+    "district": "Kallakurichi",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 1070,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "North Eastern Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.3,
+      "rabi": 0.55,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 29.5,
+      "rabi": 25.5,
+      "summer": 32.5
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 26
+  },
+  {
+    "id": "kancheepuram",
+    "district": "Kancheepuram",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 1244,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "North Eastern Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.25,
+      "rabi": 0.6,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 31.0,
+      "rabi": 26.5,
+      "summer": 33.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 24
+  },
+  {
+    "id": "kanyakumari",
+    "district": "Kanyakumari",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 860,
+    "rainfall_variability": "low",
+    "agro_climatic_zone": "High Rainfall Zone",
+    "soil_type": "Lateritic Soil",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.5,
+      "rabi": 0.35,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 28.0,
+      "rabi": 26.0,
+      "summer": 29.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 15
+  },
+  {
+    "id": "karur",
+    "district": "Karur",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 629,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "Southern Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.4,
+      "rabi": 0.45,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 30.0,
+      "rabi": 26.0,
+      "summer": 33.5
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "high",
+    "rainfall_cv_percent": 25
+  },
+  {
+    "id": "krishnagiri",
+    "district": "Krishnagiri",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 820,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "North Western Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.5,
+      "rabi": 0.35,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 27.5,
+      "rabi": 24.0,
+      "summer": 31.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "high",
+    "rainfall_cv_percent": 28
+  },
+  {
+    "id": "madurai",
+    "district": "Madurai",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 858,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "Southern Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.35,
+      "rabi": 0.5,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 30.0,
+      "rabi": 26.0,
+      "summer": 33.5
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "high",
+    "rainfall_cv_percent": 22
+  },
+  {
+    "id": "mayiladuthurai",
+    "district": "Mayiladuthurai",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 1079,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "Cauvery Delta Zone",
+    "soil_type": "Alluvial Soil",
+    "soil_drainage": "Moderate",
+    "seasonal_rainfall_share": {
+      "kharif": 0.3,
+      "rabi": 0.55,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 30.5,
+      "rabi": 26.5,
+      "summer": 33.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 25
+  },
+  {
+    "id": "nagapattinam",
+    "district": "Nagapattinam",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 1341,
+    "rainfall_variability": "high",
+    "agro_climatic_zone": "Cauvery Delta Zone",
+    "soil_type": "Clayey Delta Soil",
+    "soil_drainage": "Poor",
+    "seasonal_rainfall_share": {
+      "kharif": 0.25,
+      "rabi": 0.6,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 30.0,
+      "rabi": 26.5,
+      "summer": 32.5
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "clay",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 35
+  },
+  {
+    "id": "namakkal",
+    "district": "Namakkal",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 791,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "North Western Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.45,
+      "rabi": 0.4,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 29.5,
+      "rabi": 25.5,
+      "summer": 33.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "high",
+    "rainfall_cv_percent": 24
+  },
+  {
+    "id": "nilgiris",
+    "district": "Nilgiris",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 1920,
+    "rainfall_variability": "low",
+    "agro_climatic_zone": "Hilly Zone",
+    "soil_type": "Lateritic Soil",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.55,
+      "rabi": 0.25,
+      "summer": 0.2
+    },
+    "seasonal_temp_avg": {
+      "kharif": 18.5,
+      "rabi": 15.5,
+      "summer": 20.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "low",
+    "rainfall_cv_percent": 17
+  },
+  {
+    "id": "perambalur",
+    "district": "Perambalur",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 908,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "Cauvery Delta Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.35,
+      "rabi": 0.5,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 30.0,
+      "rabi": 26.0,
+      "summer": 33.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 23
+  },
+  {
+    "id": "pudukkottai",
+    "district": "Pudukkottai",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 923,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "Southern Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.35,
+      "rabi": 0.5,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 30.0,
+      "rabi": 26.5,
+      "summer": 33.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "high",
+    "rainfall_cv_percent": 22
+  },
+  {
+    "id": "ramanathapuram",
+    "district": "Ramanathapuram",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 821,
+    "rainfall_variability": "high",
+    "agro_climatic_zone": "Southern Zone",
+    "soil_type": "Sandy Soil",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.3,
+      "rabi": 0.55,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 30.0,
+      "rabi": 27.0,
+      "summer": 32.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "sand",
+    "temp_variability_index": "high",
+    "rainfall_cv_percent": 35
+  },
+  {
+    "id": "ranipet",
+    "district": "Ranipet",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 954,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "North Eastern Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.3,
+      "rabi": 0.55,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 30.0,
+      "rabi": 26.0,
+      "summer": 33.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 26
+  },
+  {
+    "id": "salem",
+    "district": "Salem",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 930,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "North Western Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.45,
+      "rabi": 0.4,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 29.0,
+      "rabi": 25.5,
+      "summer": 33.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "high",
+    "rainfall_cv_percent": 26
+  },
+  {
+    "id": "sivagangai",
+    "district": "Sivagangai",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 931,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "Southern Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.3,
+      "rabi": 0.55,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 30.0,
+      "rabi": 26.5,
+      "summer": 33.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "high",
+    "rainfall_cv_percent": 28
+  },
+  {
+    "id": "tenkasi",
+    "district": "Tenkasi",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 747,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "Southern Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.4,
+      "rabi": 0.45,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 28.5,
+      "rabi": 25.5,
+      "summer": 31.5
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "high",
+    "rainfall_cv_percent": 27
+  },
+  {
+    "id": "thanjavur",
+    "district": "Thanjavur",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 1053,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "Cauvery Delta Zone",
+    "soil_type": "Clayey Delta Soil",
+    "soil_drainage": "Poor",
+    "seasonal_rainfall_share": {
+      "kharif": 0.3,
+      "rabi": 0.55,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 30.5,
+      "rabi": 26.5,
+      "summer": 33.5
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "clay",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 27
+  },
+  {
+    "id": "theni",
+    "district": "Theni",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 1011,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "Southern Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.45,
+      "rabi": 0.4,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 27.5,
+      "rabi": 24.0,
+      "summer": 31.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "high",
+    "rainfall_cv_percent": 25
+  },
+  {
+    "id": "thoothukudi",
+    "district": "Thoothukudi",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 655,
+    "rainfall_variability": "high",
+    "agro_climatic_zone": "Southern Zone",
+    "soil_type": "Sandy Soil",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.3,
+      "rabi": 0.55,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 30.5,
+      "rabi": 27.0,
+      "summer": 33.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "sand",
+    "temp_variability_index": "high",
+    "rainfall_cv_percent": 40
+  },
+  {
+    "id": "tiruchirappalli",
+    "district": "Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 696,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "Southern Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.35,
+      "rabi": 0.5,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 30.5,
+      "rabi": 26.5,
+      "summer": 34.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "high",
+    "rainfall_cv_percent": 27
+  },
+  {
+    "id": "tirunelveli",
+    "district": "Tirunelveli",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 736,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "Southern Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.35,
+      "rabi": 0.5,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 29.5,
+      "rabi": 26.0,
+      "summer": 32.5
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "high",
+    "rainfall_cv_percent": 24
+  },
+  {
+    "id": "tirupattur",
+    "district": "Tirupattur",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 961,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "North Eastern Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.35,
+      "rabi": 0.5,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 28.0,
+      "rabi": 24.5,
+      "summer": 31.5
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 28
+  },
+  {
+    "id": "tiruppur",
+    "district": "Tiruppur",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 618,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "Western Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.45,
+      "rabi": 0.4,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 27.5,
+      "rabi": 24.5,
+      "summer": 31.5
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 28
+  },
+  {
+    "id": "tiruvallur",
+    "district": "Tiruvallur",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 1244,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "North Eastern Zone",
+    "soil_type": "Alluvial Soil",
+    "soil_drainage": "Moderate",
+    "seasonal_rainfall_share": {
+      "kharif": 0.25,
+      "rabi": 0.6,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 31.0,
+      "rabi": 26.5,
+      "summer": 33.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 26
+  },
+  {
+    "id": "tiruvannamalai",
+    "district": "Tiruvannamalai",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 1049,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "North Eastern Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.3,
+      "rabi": 0.55,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 29.5,
+      "rabi": 25.5,
+      "summer": 32.5
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 26
+  },
+  {
+    "id": "tiruvarur",
+    "district": "Tiruvarur",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 1129,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "Cauvery Delta Zone",
+    "soil_type": "Clayey Delta Soil",
+    "soil_drainage": "Poor",
+    "seasonal_rainfall_share": {
+      "kharif": 0.25,
+      "rabi": 0.6,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 30.5,
+      "rabi": 26.5,
+      "summer": 33.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "clay",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 25
+  },
+  {
+    "id": "vellore",
+    "district": "Vellore",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 947,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "North Eastern Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.3,
+      "rabi": 0.55,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 30.0,
+      "rabi": 26.0,
+      "summer": 33.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 22
+  },
+  {
+    "id": "viluppuram",
+    "district": "Viluppuram",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 1067,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "North Eastern Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.3,
+      "rabi": 0.55,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 30.0,
+      "rabi": 26.0,
+      "summer": 33.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "medium",
+    "rainfall_cv_percent": 28
+  },
+  {
+    "id": "virudhunagar",
+    "district": "Virudhunagar",
+    "state": "Tamil Nadu",
+    "avg_annual_rainfall_mm": 808,
+    "rainfall_variability": "medium",
+    "agro_climatic_zone": "Southern Zone",
+    "soil_type": "Red Loam",
+    "soil_drainage": "Good",
+    "seasonal_rainfall_share": {
+      "kharif": 0.35,
+      "rabi": 0.5,
+      "summer": 0.15
+    },
+    "seasonal_temp_avg": {
+      "kharif": 30.0,
+      "rabi": 26.5,
+      "summer": 33.0
+    },
+    "source": "IMD Rainfall Normals + TNAU Agro-Climatic Zone + NBSS-LUP Soil Map + NASA POWER Climatology (2001-2020)",
+    "soil_texture": "loam",
+    "temp_variability_index": "high",
+    "rainfall_cv_percent": 28
+  }
+]

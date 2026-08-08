@@ -1,0 +1,1170 @@
+[
+  {
+    "id": "rice_paddy",
+    "name": "Rice (Paddy)",
+    "category": "Cereal",
+    "water_requirement": "high",
+    "water_need_mm_min": 1200,
+    "water_need_mm_max": 1500,
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "growth_duration_days_min": 90,
+    "growth_duration_days_max": 150,
+    "rotation_sensitive": true,
+    "market_volatility": "low",
+    "bad_predecessors": [
+      "rice_paddy"
+    ],
+    "good_predecessors": [
+      "green_gram",
+      "black_gram",
+      "groundnut",
+      "sesame"
+    ],
+    "description": "Staple cereal requiring standing water. Dominant kharif crop in irrigated deltaic regions.",
+    "sources": {
+      "water_requirement": "FAO Irrigation & Drainage Paper, Table 5: Rice (paddy) 450â€“700 mm ETc; IRRI: total field water 1300â€“1500 mm (incl. submergence, seepage, land prep)",
+      "season_calendar": "ICAR Crop Calendar; pmfby.gov.in â€“ Kharif primary, some rabi in irrigated deltas",
+      "market_volatility": "PIB 2023-24: record production 1378.25 LMT; prices firm but govt MSP stabilises",
+      "rotation": "ICAR: rice-rice monoculture causes nutrient depletion & pest buildup"
+    },
+    "family": "Poaceae",
+    "bad_predecessor_families": [
+      "Poaceae"
+    ],
+    "good_predecessor_families": [
+      "Fabaceae"
+    ],
+    "heat_stress": 35,
+    "cold_stress": 15,
+    "yield_potential": 8,
+    "market_price": 6,
+    "input_cost": 7,
+    "msp_covered": true,
+    "msp_price_per_qtl": 2369,
+    "msp_year": "2025-26"
+  },
+  {
+    "id": "wheat",
+    "name": "Wheat",
+    "category": "Cereal",
+    "water_requirement": "medium",
+    "water_need_mm_min": 450,
+    "water_need_mm_max": 650,
+    "seasons": [
+      "rabi"
+    ],
+    "growth_duration_days_min": 120,
+    "growth_duration_days_max": 150,
+    "rotation_sensitive": true,
+    "market_volatility": "medium",
+    "bad_predecessors": [
+      "wheat"
+    ],
+    "good_predecessors": [
+      "rice_paddy",
+      "soybean",
+      "groundnut",
+      "green_gram"
+    ],
+    "description": "India's primary rabi cereal. Requires cool growing season and warm ripening period.",
+    "sources": {
+      "water_requirement": "FAO Table 5: Barley/Oats/Wheat 450â€“650 mm",
+      "season_calendar": "ICAR Crop Calendar â€“ Rabi (Octâ€“Nov sowing, Marâ€“Apr harvest)",
+      "market_volatility": "USDA/S&P Global 2024: prices softened 16% YoY by Feb 2024; moderate swings",
+      "rotation": "ICAR: wheat-wheat depletes soil N; rotate with legumes"
+    },
+    "family": "Poaceae",
+    "bad_predecessor_families": [
+      "Poaceae"
+    ],
+    "good_predecessor_families": [
+      "Fabaceae"
+    ],
+    "heat_stress": 30,
+    "cold_stress": 10,
+    "yield_potential": 8,
+    "market_price": 6,
+    "input_cost": 6,
+    "msp_covered": true,
+    "msp_price_per_qtl": 2425,
+    "msp_year": "2025-26"
+  },
+  {
+    "id": "maize",
+    "name": "Maize (Corn)",
+    "category": "Cereal",
+    "water_requirement": "medium",
+    "water_need_mm_min": 500,
+    "water_need_mm_max": 800,
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "growth_duration_days_min": 80,
+    "growth_duration_days_max": 180,
+    "rotation_sensitive": true,
+    "market_volatility": "low",
+    "bad_predecessors": [
+      "maize",
+      "sorghum"
+    ],
+    "good_predecessors": [
+      "groundnut",
+      "soybean",
+      "black_gram"
+    ],
+    "description": "Versatile cereal for food, feed, and industry. Adaptable across agro-climatic zones.",
+    "sources": {
+      "water_requirement": "FAO Table 5: Maize 500â€“800 mm",
+      "season_calendar": "ICAR: Kharif primary; also grown rabi in peninsular India",
+      "market_volatility": "Agmarknet: relatively stable MSP-backed procurement; low-medium volatility",
+      "rotation": "ICAR: maize-maize increases stalk borer; legume rotation recommended"
+    },
+    "family": "Poaceae",
+    "bad_predecessor_families": [
+      "Poaceae"
+    ],
+    "good_predecessor_families": [
+      "Fabaceae"
+    ],
+    "heat_stress": 38,
+    "cold_stress": 12,
+    "yield_potential": 9,
+    "market_price": 7,
+    "input_cost": 6,
+    "msp_covered": true,
+    "msp_price_per_qtl": 2090,
+    "msp_year": "2025-26"
+  },
+  {
+    "id": "sorghum",
+    "name": "Sorghum (Jowar)",
+    "category": "Millet",
+    "water_requirement": "low",
+    "water_need_mm_min": 450,
+    "water_need_mm_max": 650,
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "growth_duration_days_min": 120,
+    "growth_duration_days_max": 130,
+    "rotation_sensitive": true,
+    "market_volatility": "low",
+    "bad_predecessors": [
+      "sorghum",
+      "maize"
+    ],
+    "good_predecessors": [
+      "groundnut",
+      "cotton",
+      "green_gram"
+    ],
+    "description": "Drought-tolerant millet ideal for dryland farming in Deccan Plateau.",
+    "sources": {
+      "water_requirement": "FAO Table 5: Sorghum/Millet 450â€“650 mm",
+      "season_calendar": "ICAR: Kharif and rabi (ragi in Karnataka, Maharashtra)",
+      "market_volatility": "data.gov.in: prices stable with low trade volumes; low volatility",
+      "rotation": "ICAR: sorghum-sorghum builds shoot fly population"
+    },
+    "family": "Poaceae",
+    "bad_predecessor_families": [
+      "Poaceae"
+    ],
+    "good_predecessor_families": [
+      "Fabaceae"
+    ],
+    "heat_stress": 40,
+    "cold_stress": 15,
+    "yield_potential": 6,
+    "market_price": 5,
+    "input_cost": 4,
+    "msp_covered": true,
+    "msp_price_per_qtl": 3371,
+    "msp_year": "2025-26"
+  },
+  {
+    "id": "pearl_millet",
+    "name": "Pearl Millet (Bajra)",
+    "category": "Millet",
+    "water_requirement": "low",
+    "water_need_mm_min": 300,
+    "water_need_mm_max": 500,
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "growth_duration_days_min": 75,
+    "growth_duration_days_max": 100,
+    "rotation_sensitive": false,
+    "market_volatility": "low",
+    "bad_predecessors": [
+      "pearl_millet"
+    ],
+    "good_predecessors": [
+      "groundnut",
+      "sesame",
+      "green_gram"
+    ],
+    "description": "Highly drought-resistant crop, well-suited for arid and semi-arid zones of western India.",
+    "sources": {
+      "water_requirement": "FAO Table 5: Sorghum/Millet 450â€“650 mm; pearl millet even lower ~300â€“500 mm",
+      "season_calendar": "ICAR: Kharif primary; summer in some irrigated areas",
+      "market_volatility": "data.gov.in: limited commercial trade; MSP-backed; low volatility",
+      "rotation": "ICAR: bajra-bajra acceptable but legume rotation improves soil"
+    },
+    "family": "Poaceae",
+    "bad_predecessor_families": [
+      "Poaceae"
+    ],
+    "good_predecessor_families": [
+      "Fabaceae"
+    ],
+    "heat_stress": 42,
+    "cold_stress": 15,
+    "yield_potential": 5,
+    "market_price": 5,
+    "input_cost": 3,
+    "msp_covered": true,
+    "msp_price_per_qtl": 2625,
+    "msp_year": "2025-26"
+  },
+  {
+    "id": "finger_millet",
+    "name": "Finger Millet (Ragi)",
+    "category": "Millet",
+    "water_requirement": "low",
+    "water_need_mm_min": 350,
+    "water_need_mm_max": 500,
+    "seasons": [
+      "kharif"
+    ],
+    "growth_duration_days_min": 105,
+    "growth_duration_days_max": 140,
+    "rotation_sensitive": false,
+    "market_volatility": "low",
+    "bad_predecessors": [
+      "finger_millet"
+    ],
+    "good_predecessors": [
+      "groundnut",
+      "horsegram"
+    ],
+    "description": "Nutritious millet rich in calcium. Traditional crop in hilly and semi-arid regions.",
+    "sources": {
+      "water_requirement": "FAO Table 5: Sorghum/Millet category; TNAU: ragi ~350â€“500 mm",
+      "season_calendar": "ICAR: Kharif (Junâ€“Jul sowing in Karnataka, TN hills)",
+      "market_volatility": "data.gov.in: niche market, stable demand; low volatility",
+      "rotation": "ICAR: finger millet benefits from horsegram/groundnut predecessor"
+    },
+    "family": "Poaceae",
+    "bad_predecessor_families": [
+      "Poaceae"
+    ],
+    "good_predecessor_families": [
+      "Fabaceae"
+    ],
+    "heat_stress": 38,
+    "cold_stress": 15,
+    "yield_potential": 6,
+    "market_price": 6,
+    "input_cost": 3,
+    "msp_covered": true,
+    "msp_price_per_qtl": 4290,
+    "msp_year": "2025-26"
+  },
+  {
+    "id": "groundnut",
+    "name": "Groundnut (Peanut)",
+    "category": "Oilseed",
+    "water_requirement": "medium",
+    "water_need_mm_min": 500,
+    "water_need_mm_max": 700,
+    "seasons": [
+      "kharif",
+      "rabi",
+      "summer"
+    ],
+    "growth_duration_days_min": 100,
+    "growth_duration_days_max": 140,
+    "rotation_sensitive": true,
+    "market_volatility": "medium",
+    "bad_predecessors": [
+      "groundnut",
+      "sesame",
+      "sunflower"
+    ],
+    "good_predecessors": [
+      "rice_paddy",
+      "maize",
+      "sorghum",
+      "finger_millet"
+    ],
+    "description": "Major oilseed crop with nitrogen-fixing ability. Enriches soil fertility through symbiotic fixation.",
+    "sources": {
+      "water_requirement": "FAO Table 5: Peanut 500â€“700 mm",
+      "season_calendar": "ICAR: Kharif primary; rabi/summer with irrigation",
+      "market_volatility": "Agmarknet: moderate price swings based on monsoon performance",
+      "rotation": "ICAR: groundnut-groundnut increases collar rot; cereal rotation recommended"
+    },
+    "family": "Fabaceae",
+    "bad_predecessor_families": [
+      "Fabaceae"
+    ],
+    "good_predecessor_families": [
+      "Poaceae"
+    ],
+    "heat_stress": 35,
+    "cold_stress": 15,
+    "yield_potential": 7,
+    "market_price": 8,
+    "input_cost": 6,
+    "msp_covered": true,
+    "msp_price_per_qtl": 6783,
+    "msp_year": "2025-26"
+  },
+  {
+    "id": "sesame",
+    "name": "Sesame (Gingelly)",
+    "category": "Oilseed",
+    "water_requirement": "low",
+    "water_need_mm_min": 300,
+    "water_need_mm_max": 400,
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "growth_duration_days_min": 80,
+    "growth_duration_days_max": 95,
+    "rotation_sensitive": true,
+    "market_volatility": "medium",
+    "bad_predecessors": [
+      "sesame",
+      "groundnut"
+    ],
+    "good_predecessors": [
+      "rice_paddy",
+      "maize",
+      "cotton"
+    ],
+    "description": "Ancient oilseed crop with high market value. Drought-tolerant and short duration.",
+    "sources": {
+      "water_requirement": "FAO: sesame is low-water oilseed; ~300â€“400 mm (TNAU/ICAR estimates)",
+      "season_calendar": "ICAR: Kharif; summer in some regions",
+      "market_volatility": "Agmarknet: high-value niche crop; moderate price swings",
+      "rotation": "ICAR: avoid consecutive oilseeds on same plot"
+    },
+    "family": "Pedaliaceae",
+    "bad_predecessor_families": [
+      "Pedaliaceae"
+    ],
+    "good_predecessor_families": [
+      "Fabaceae"
+    ],
+    "heat_stress": 40,
+    "cold_stress": 20,
+    "yield_potential": 6,
+    "market_price": 9,
+    "input_cost": 4,
+    "msp_covered": true,
+    "msp_price_per_qtl": 9267,
+    "msp_year": "2025-26"
+  },
+  {
+    "id": "sunflower",
+    "name": "Sunflower",
+    "category": "Oilseed",
+    "water_requirement": "medium",
+    "water_need_mm_min": 600,
+    "water_need_mm_max": 1000,
+    "seasons": [
+      "rabi",
+      "summer"
+    ],
+    "growth_duration_days_min": 90,
+    "growth_duration_days_max": 130,
+    "rotation_sensitive": true,
+    "market_volatility": "medium",
+    "bad_predecessors": [
+      "sunflower"
+    ],
+    "good_predecessors": [
+      "rice_paddy",
+      "maize",
+      "black_gram"
+    ],
+    "description": "Photo-insensitive oilseed suitable for multiple seasons. Good bee-forage crop.",
+    "sources": {
+      "water_requirement": "FAO Table 5: Sunflower 600â€“1000 mm",
+      "season_calendar": "ICAR: Rabi/summer in Karnataka, TN, AP",
+      "market_volatility": "Agmarknet: moderate; tracks global edible oil prices",
+      "rotation": "ICAR: sunflower-sunflower causes Sclerotinia buildup"
+    },
+    "family": "Asteraceae",
+    "bad_predecessor_families": [
+      "Asteraceae"
+    ],
+    "good_predecessor_families": [
+      "Fabaceae"
+    ],
+    "heat_stress": 35,
+    "cold_stress": 15,
+    "yield_potential": 7,
+    "market_price": 7,
+    "input_cost": 5,
+    "msp_covered": true,
+    "msp_price_per_qtl": 7280,
+    "msp_year": "2025-26"
+  },
+  {
+    "id": "cotton",
+    "name": "Cotton",
+    "category": "Fibre",
+    "water_requirement": "medium",
+    "water_need_mm_min": 700,
+    "water_need_mm_max": 1300,
+    "seasons": [
+      "kharif"
+    ],
+    "growth_duration_days_min": 150,
+    "growth_duration_days_max": 195,
+    "rotation_sensitive": true,
+    "market_volatility": "low",
+    "bad_predecessors": [
+      "cotton"
+    ],
+    "good_predecessors": [
+      "groundnut",
+      "sorghum",
+      "green_gram",
+      "black_gram"
+    ],
+    "description": "Major fibre cash crop with long duration. Requires careful pest management.",
+    "sources": {
+      "water_requirement": "FAO Table 5: Cotton 700â€“1300 mm",
+      "season_calendar": "ICAR: Kharif (Junâ€“Jul sowing; Octâ€“Jan picking)",
+      "market_volatility": "CCI/PIB 2023-24: lowest Cotlook A-Index spread in 9 years; low volatility",
+      "rotation": "ICAR: cotton-cotton increases bollworm/wilt; legume rotation critical"
+    },
+    "family": "Malvaceae",
+    "bad_predecessor_families": [
+      "Malvaceae"
+    ],
+    "good_predecessor_families": [
+      "Fabaceae"
+    ],
+    "heat_stress": 38,
+    "cold_stress": 15,
+    "yield_potential": 8,
+    "market_price": 8,
+    "input_cost": 8,
+    "msp_covered": true,
+    "msp_price_per_qtl": 7521,
+    "msp_year": "2025-26"
+  },
+  {
+    "id": "sugarcane",
+    "name": "Sugarcane",
+    "category": "Cash Crop",
+    "water_requirement": "high",
+    "water_need_mm_min": 1500,
+    "water_need_mm_max": 2500,
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "growth_duration_days_min": 270,
+    "growth_duration_days_max": 365,
+    "rotation_sensitive": true,
+    "market_volatility": "low",
+    "bad_predecessors": [
+      "sugarcane"
+    ],
+    "good_predecessors": [
+      "rice_paddy",
+      "groundnut",
+      "green_gram"
+    ],
+    "description": "Perennial cash crop with very high water demand. Major source of sugar and ethanol.",
+    "sources": {
+      "water_requirement": "FAO Table 5: Sugarcane 1500â€“2500 mm",
+      "season_calendar": "ICAR: planted kharif or rabi; 10â€“18 month cycle",
+      "market_volatility": "PIB: FRP set at â‚¹315/qtl (2023-24); government-regulated; low volatility",
+      "rotation": "ICAR: sugarcane-sugarcane depletes K; fallow or legume intercrop needed"
+    },
+    "family": "Poaceae",
+    "bad_predecessor_families": [
+      "Poaceae"
+    ],
+    "good_predecessor_families": [
+      "Fabaceae"
+    ],
+    "heat_stress": 38,
+    "cold_stress": 15,
+    "yield_potential": 10,
+    "market_price": 7,
+    "input_cost": 9,
+    "msp_covered": true,
+    "msp_price_per_qtl": 340,
+    "msp_year": "2025-26"
+  },
+  {
+    "id": "black_gram",
+    "name": "Black Gram (Urad Dal)",
+    "category": "Pulse",
+    "water_requirement": "low",
+    "water_need_mm_min": 250,
+    "water_need_mm_max": 400,
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "growth_duration_days_min": 65,
+    "growth_duration_days_max": 90,
+    "rotation_sensitive": true,
+    "market_volatility": "high",
+    "bad_predecessors": [
+      "black_gram",
+      "green_gram"
+    ],
+    "good_predecessors": [
+      "rice_paddy",
+      "maize",
+      "cotton"
+    ],
+    "description": "Short-duration pulse rich in protein. Excellent nitrogen fixer for crop rotation.",
+    "sources": {
+      "water_requirement": "FAO Table 5: Bean/Pea family 300â€“500 mm; TNAU: black gram ~300 mm",
+      "season_calendar": "ICAR: Kharif and rabi (short-duration catch crop)",
+      "market_volatility": "Agmarknet: high volatility; prices spike when production falls",
+      "rotation": "ICAR: avoid pulse-pulse sequence; cereal predecessor ideal"
+    },
+    "family": "Fabaceae",
+    "bad_predecessor_families": [
+      "Fabaceae"
+    ],
+    "good_predecessor_families": [
+      "Poaceae"
+    ],
+    "heat_stress": 35,
+    "cold_stress": 15,
+    "yield_potential": 6,
+    "market_price": 8,
+    "input_cost": 4,
+    "msp_covered": true,
+    "msp_price_per_qtl": 7400,
+    "msp_year": "2025-26"
+  },
+  {
+    "id": "green_gram",
+    "name": "Green Gram (Moong Dal)",
+    "category": "Pulse",
+    "water_requirement": "low",
+    "water_need_mm_min": 250,
+    "water_need_mm_max": 350,
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "growth_duration_days_min": 60,
+    "growth_duration_days_max": 75,
+    "rotation_sensitive": true,
+    "market_volatility": "high",
+    "bad_predecessors": [
+      "green_gram",
+      "black_gram"
+    ],
+    "good_predecessors": [
+      "rice_paddy",
+      "maize",
+      "sorghum",
+      "cotton"
+    ],
+    "description": "Fast-growing pulse ideal as catch crop. Improves soil nitrogen through biological fixation.",
+    "sources": {
+      "water_requirement": "FAO: Pea/Bean family 300â€“500 mm; TNAU: green gram ~250â€“350 mm",
+      "season_calendar": "ICAR: Kharif and summer (short catch crop)",
+      "market_volatility": "Agmarknet: high volatility; production-sensitive pricing",
+      "rotation": "ICAR: avoid consecutive pulse crops; ideal between cereal cycles"
+    },
+    "family": "Fabaceae",
+    "bad_predecessor_families": [
+      "Fabaceae"
+    ],
+    "good_predecessor_families": [
+      "Poaceae"
+    ],
+    "heat_stress": 35,
+    "cold_stress": 15,
+    "yield_potential": 6,
+    "market_price": 8,
+    "input_cost": 4,
+    "msp_covered": true,
+    "msp_price_per_qtl": 8682,
+    "msp_year": "2025-26"
+  },
+  {
+    "id": "red_gram",
+    "name": "Red Gram (Toor/Arhar Dal)",
+    "category": "Pulse",
+    "water_requirement": "low",
+    "water_need_mm_min": 350,
+    "water_need_mm_max": 500,
+    "seasons": [
+      "kharif"
+    ],
+    "growth_duration_days_min": 140,
+    "growth_duration_days_max": 180,
+    "rotation_sensitive": true,
+    "market_volatility": "high",
+    "bad_predecessors": [
+      "red_gram"
+    ],
+    "good_predecessors": [
+      "maize",
+      "sorghum",
+      "cotton",
+      "rice_paddy"
+    ],
+    "description": "Deep-rooted pulse with good drought tolerance. Long duration but high market value.",
+    "sources": {
+      "water_requirement": "FAO: Pea family 350â€“500 mm; ICAR: red gram ~350â€“450 mm in rainfed India",
+      "season_calendar": "ICAR: Kharif (long-duration 150+ days)",
+      "market_volatility": "Agmarknet: high volatility; import-dependent for shortfalls",
+      "rotation": "ICAR: red gram-red gram causes Fusarium wilt buildup"
+    },
+    "family": "Fabaceae",
+    "bad_predecessor_families": [
+      "Fabaceae"
+    ],
+    "good_predecessor_families": [
+      "Poaceae"
+    ],
+    "heat_stress": 35,
+    "cold_stress": 15,
+    "yield_potential": 7,
+    "market_price": 8,
+    "input_cost": 5,
+    "msp_covered": true,
+    "msp_price_per_qtl": 7550,
+    "msp_year": "2025-26"
+  },
+  {
+    "id": "soybean",
+    "name": "Soybean",
+    "category": "Oilseed",
+    "water_requirement": "medium",
+    "water_need_mm_min": 450,
+    "water_need_mm_max": 700,
+    "seasons": [
+      "kharif"
+    ],
+    "growth_duration_days_min": 90,
+    "growth_duration_days_max": 150,
+    "rotation_sensitive": true,
+    "market_volatility": "medium",
+    "bad_predecessors": [
+      "soybean",
+      "groundnut"
+    ],
+    "good_predecessors": [
+      "rice_paddy",
+      "maize",
+      "wheat",
+      "sorghum"
+    ],
+    "description": "Protein-rich oilseed with growing industrial demand. Good nitrogen fixer.",
+    "sources": {
+      "water_requirement": "FAO Table 5: Soybean 450â€“700 mm",
+      "season_calendar": "ICAR: Kharif (Junâ€“Jul sowing in MP, Maharashtra, Rajasthan)",
+      "market_volatility": "Agmarknet: moderate; linked to global soy complex pricing",
+      "rotation": "ICAR: soybean-soybean causes collar rot; cereal rotation essential"
+    },
+    "family": "Fabaceae",
+    "bad_predecessor_families": [
+      "Fabaceae"
+    ],
+    "good_predecessor_families": [
+      "Poaceae"
+    ],
+    "heat_stress": 35,
+    "cold_stress": 15,
+    "yield_potential": 8,
+    "market_price": 7,
+    "input_cost": 6,
+    "msp_covered": true,
+    "msp_price_per_qtl": 4892,
+    "msp_year": "2025-26"
+  },
+  {
+    "id": "tomato",
+    "name": "Tomato",
+    "category": "Vegetable",
+    "water_requirement": "medium",
+    "water_need_mm_min": 400,
+    "water_need_mm_max": 800,
+    "seasons": [
+      "rabi",
+      "summer",
+      "kharif"
+    ],
+    "growth_duration_days_min": 90,
+    "growth_duration_days_max": 180,
+    "rotation_sensitive": true,
+    "market_volatility": "high",
+    "bad_predecessors": [
+      "tomato",
+      "chilli",
+      "brinjal"
+    ],
+    "good_predecessors": [
+      "maize",
+      "groundnut",
+      "green_gram",
+      "rice_paddy"
+    ],
+    "description": "Popular vegetable with high yield potential but extreme market price volatility.",
+    "sources": {
+      "water_requirement": "FAO Table 5: Tomato 400â€“800 mm",
+      "season_calendar": "ICAR: Rabi/summer in peninsular India; kharif in hills",
+      "market_volatility": "PIB/Agmarknet 2023-24: prices peaked â‚¹240/kg Jul 2023, crashed 80% â€” extreme volatility",
+      "rotation": "ICAR: avoid Solanaceae succession (tomato-chilli-brinjal shares diseases)"
+    },
+    "family": "Solanaceae",
+    "bad_predecessor_families": [
+      "Solanaceae"
+    ],
+    "good_predecessor_families": [
+      "Poaceae",
+      "Fabaceae"
+    ],
+    "heat_stress": 33,
+    "cold_stress": 10,
+    "yield_potential": 9,
+    "market_price": 9,
+    "input_cost": 8,
+    "msp_covered": false,
+    "msp_price_per_qtl": null,
+    "msp_year": null
+  },
+  {
+    "id": "onion",
+    "name": "Onion",
+    "category": "Vegetable",
+    "water_requirement": "medium",
+    "water_need_mm_min": 350,
+    "water_need_mm_max": 550,
+    "seasons": [
+      "rabi",
+      "kharif"
+    ],
+    "growth_duration_days_min": 100,
+    "growth_duration_days_max": 150,
+    "rotation_sensitive": true,
+    "market_volatility": "high",
+    "bad_predecessors": [
+      "onion",
+      "garlic"
+    ],
+    "good_predecessors": [
+      "rice_paddy",
+      "maize",
+      "groundnut",
+      "green_gram"
+    ],
+    "description": "Essential vegetable with good storage life but notorious for extreme price fluctuations.",
+    "sources": {
+      "water_requirement": "FAO Table 5: Onion 350â€“550 mm",
+      "season_calendar": "ICAR: Rabi primary; late kharif in Maharashtra",
+      "market_volatility": "Agmarknet 2023-24: prices surged Oct 2024, crashed 50% in 1 week â€” extreme volatility",
+      "rotation": "ICAR: onion-onion causes white rot buildup in soil"
+    },
+    "family": "Amaryllidaceae",
+    "bad_predecessor_families": [
+      "Amaryllidaceae"
+    ],
+    "good_predecessor_families": [
+      "Fabaceae"
+    ],
+    "heat_stress": 33,
+    "cold_stress": 10,
+    "yield_potential": 8,
+    "market_price": 8,
+    "input_cost": 7,
+    "msp_covered": false,
+    "msp_price_per_qtl": null,
+    "msp_year": null
+  },
+  {
+    "id": "chilli",
+    "name": "Chilli (Pepper)",
+    "category": "Spice",
+    "water_requirement": "medium",
+    "water_need_mm_min": 600,
+    "water_need_mm_max": 900,
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "growth_duration_days_min": 120,
+    "growth_duration_days_max": 210,
+    "rotation_sensitive": true,
+    "market_volatility": "high",
+    "bad_predecessors": [
+      "chilli",
+      "tomato",
+      "brinjal"
+    ],
+    "good_predecessors": [
+      "rice_paddy",
+      "maize",
+      "groundnut",
+      "cotton"
+    ],
+    "description": "Cash crop with volatile pricing. Guntur and Ramanathapuram varieties are well-known.",
+    "sources": {
+      "water_requirement": "FAO Table 5: Pepper 600â€“900 mm; chilli similar to capsicum family",
+      "season_calendar": "ICAR: Kharif and rabi in peninsular India",
+      "market_volatility": "Agmarknet: high; prices highly sensitive to monsoon and cold-storage availability",
+      "rotation": "ICAR: chilli shares Solanaceae diseases with tomato/brinjal"
+    },
+    "family": "Solanaceae",
+    "bad_predecessor_families": [
+      "Solanaceae"
+    ],
+    "good_predecessor_families": [
+      "Poaceae",
+      "Fabaceae"
+    ],
+    "heat_stress": 35,
+    "cold_stress": 15,
+    "yield_potential": 8,
+    "market_price": 9,
+    "input_cost": 7,
+    "msp_covered": false,
+    "msp_price_per_qtl": null,
+    "msp_year": null
+  },
+  {
+    "id": "banana",
+    "name": "Banana",
+    "category": "Fruit",
+    "water_requirement": "high",
+    "water_need_mm_min": 1200,
+    "water_need_mm_max": 2200,
+    "seasons": [
+      "kharif",
+      "rabi",
+      "summer"
+    ],
+    "growth_duration_days_min": 300,
+    "growth_duration_days_max": 365,
+    "rotation_sensitive": true,
+    "market_volatility": "medium",
+    "bad_predecessors": [
+      "banana"
+    ],
+    "good_predecessors": [
+      "rice_paddy",
+      "groundnut",
+      "green_gram"
+    ],
+    "description": "High-value fruit crop with continuous demand. Needs reliable assured irrigation.",
+    "sources": {
+      "water_requirement": "FAO Table 5: Banana 1200â€“2200 mm",
+      "season_calendar": "ICAR: All three seasons with assured irrigation",
+      "market_volatility": "Agmarknet: moderate; perishability creates transport-dependent price swings",
+      "rotation": "ICAR: banana-banana causes Panama wilt buildup; fallow recommended"
+    },
+    "family": "Musaceae",
+    "bad_predecessor_families": [
+      "Musaceae"
+    ],
+    "good_predecessor_families": [
+      "Fabaceae"
+    ],
+    "heat_stress": 38,
+    "cold_stress": 15,
+    "yield_potential": 9,
+    "market_price": 8,
+    "input_cost": 8,
+    "msp_covered": false,
+    "msp_price_per_qtl": null,
+    "msp_year": null
+  },
+  {
+    "id": "turmeric",
+    "name": "Turmeric",
+    "category": "Spice",
+    "water_requirement": "medium",
+    "water_need_mm_min": 600,
+    "water_need_mm_max": 800,
+    "seasons": [
+      "kharif"
+    ],
+    "growth_duration_days_min": 210,
+    "growth_duration_days_max": 270,
+    "rotation_sensitive": true,
+    "market_volatility": "medium",
+    "bad_predecessors": [
+      "turmeric",
+      "ginger"
+    ],
+    "good_predecessors": [
+      "rice_paddy",
+      "maize",
+      "groundnut"
+    ],
+    "description": "High-value spice with medicinal properties. Erode district is India's turmeric capital.",
+    "sources": {
+      "water_requirement": "TNAU/ICAR: turmeric ~600â€“800 mm across 8-month cycle",
+      "season_calendar": "ICAR: Kharif (Junâ€“Jul planting; Janâ€“Mar harvest)",
+      "market_volatility": "Agmarknet: moderate-high; export-driven demand creates swings",
+      "rotation": "ICAR: turmeric-turmeric causes rhizome rot; cereal rotation essential"
+    },
+    "family": "Zingiberaceae",
+    "bad_predecessor_families": [
+      "Zingiberaceae"
+    ],
+    "good_predecessor_families": [
+      "Fabaceae"
+    ],
+    "heat_stress": 35,
+    "cold_stress": 15,
+    "yield_potential": 7,
+    "market_price": 9,
+    "input_cost": 7,
+    "msp_covered": false,
+    "msp_price_per_qtl": null,
+    "msp_year": null
+  },
+  {
+    "id": "potato",
+    "name": "Potato",
+    "category": "Vegetable",
+    "water_requirement": "medium",
+    "water_need_mm_min": 500,
+    "water_need_mm_max": 700,
+    "seasons": [
+      "rabi"
+    ],
+    "growth_duration_days_min": 90,
+    "growth_duration_days_max": 145,
+    "rotation_sensitive": true,
+    "market_volatility": "medium",
+    "bad_predecessors": [
+      "potato",
+      "tomato"
+    ],
+    "good_predecessors": [
+      "rice_paddy",
+      "maize",
+      "wheat",
+      "green_gram"
+    ],
+    "description": "Most important vegetable crop in India. Requires well-drained soil and cool growing conditions.",
+    "sources": {
+      "water_requirement": "FAO Table 5: Potato 500â€“700 mm (similar root crop water demand)",
+      "season_calendar": "ICAR: Rabi primary (Octâ€“Nov planting; Janâ€“Mar harvest)",
+      "market_volatility": "Agmarknet: moderate; cold storage infrastructure stabilises prices somewhat",
+      "rotation": "ICAR: potato-potato causes late blight and nematode buildup"
+    },
+    "family": "Solanaceae",
+    "bad_predecessor_families": [
+      "Solanaceae"
+    ],
+    "good_predecessor_families": [
+      "Poaceae",
+      "Fabaceae"
+    ],
+    "heat_stress": 30,
+    "cold_stress": 5,
+    "yield_potential": 9,
+    "market_price": 7,
+    "input_cost": 7,
+    "msp_covered": false,
+    "msp_price_per_qtl": null,
+    "msp_year": null
+  },
+  {
+    "id": "coconut",
+    "name": "Coconut",
+    "category": "Plantation",
+    "water_requirement": "medium",
+    "water_need_mm_min": 1300,
+    "water_need_mm_max": 2000,
+    "seasons": [
+      "kharif",
+      "rabi",
+      "summer"
+    ],
+    "growth_duration_days_min": 365,
+    "growth_duration_days_max": 365,
+    "rotation_sensitive": false,
+    "market_volatility": "low",
+    "bad_predecessors": [],
+    "good_predecessors": [],
+    "description": "Perennial plantation with multiple uses. Relatively low-maintenance once established.",
+    "sources": {
+      "water_requirement": "FAO: coconut palm ~600â€“800 mm well-distributed rainfall; not in FAO Table 5 main crops",
+      "season_calendar": "ICAR: perennial; plantable all seasons with irrigation",
+      "market_volatility": "Agmarknet: low-medium; copra prices have limited domestic variation",
+      "rotation": "ICAR: perennial plantation; not rotation-sensitive"
+    },
+    "family": "Arecaceae",
+    "bad_predecessor_families": [
+      "Arecaceae"
+    ],
+    "good_predecessor_families": [
+      "Fabaceae"
+    ],
+    "heat_stress": 35,
+    "cold_stress": 15,
+    "yield_potential": 7,
+    "market_price": 7,
+    "input_cost": 6,
+    "msp_covered": true,
+    "msp_price_per_qtl": 3400,
+    "msp_year": "2025-26"
+  },
+  {
+    "id": "horsegram",
+    "name": "Horse Gram",
+    "category": "Pulse",
+    "water_requirement": "low",
+    "water_need_mm_min": 200,
+    "water_need_mm_max": 300,
+    "seasons": [
+      "rabi"
+    ],
+    "growth_duration_days_min": 80,
+    "growth_duration_days_max": 120,
+    "rotation_sensitive": false,
+    "market_volatility": "low",
+    "bad_predecessors": [
+      "horsegram"
+    ],
+    "good_predecessors": [
+      "finger_millet",
+      "sorghum",
+      "maize"
+    ],
+    "description": "Extremely drought-hardy pulse. Thrives in poor soils with minimal inputs.",
+    "sources": {
+      "water_requirement": "FAO: bean family 300â€“500 mm; horsegram even lower ~200â€“300 mm",
+      "season_calendar": "ICAR: Rabi (Sepâ€“Oct sowing in dryland areas)",
+      "market_volatility": "data.gov.in: niche local market; very low volatility",
+      "rotation": "ICAR: good predecessor for finger millet; minimal rotation concern"
+    },
+    "family": "Fabaceae",
+    "bad_predecessor_families": [
+      "Fabaceae"
+    ],
+    "good_predecessor_families": [
+      "Poaceae"
+    ],
+    "heat_stress": 35,
+    "cold_stress": 15,
+    "yield_potential": 7,
+    "market_price": 7,
+    "input_cost": 6,
+    "msp_covered": false,
+    "msp_price_per_qtl": null,
+    "msp_year": null
+  },
+  {
+    "id": "ginger",
+    "name": "Ginger",
+    "category": "Spice",
+    "water_requirement": "high",
+    "water_need_mm_min": 1000,
+    "water_need_mm_max": 1200,
+    "seasons": [
+      "kharif"
+    ],
+    "growth_duration_days_min": 210,
+    "growth_duration_days_max": 270,
+    "rotation_sensitive": true,
+    "market_volatility": "high",
+    "bad_predecessors": [
+      "ginger",
+      "turmeric"
+    ],
+    "good_predecessors": [
+      "rice_paddy",
+      "maize",
+      "groundnut"
+    ],
+    "description": "High-value spice requiring shade and moisture. Best suited for hilly and high-rainfall areas.",
+    "sources": {
+      "water_requirement": "FAO: Citrus 900â€“1200 mm (used as proxy for perennial spice); TNAU: ginger ~1000â€“1200 mm",
+      "season_calendar": "ICAR: Kharif (Aprâ€“May planting; Decâ€“Jan harvest)",
+      "market_volatility": "Agmarknet: high; weather-dependent crop with storage losses",
+      "rotation": "ICAR: ginger-ginger causes soft rot; 3-year gap recommended"
+    },
+    "family": "Zingiberaceae",
+    "bad_predecessor_families": [
+      "Zingiberaceae"
+    ],
+    "good_predecessor_families": [
+      "Fabaceae"
+    ],
+    "heat_stress": 35,
+    "cold_stress": 15,
+    "yield_potential": 7,
+    "market_price": 7,
+    "input_cost": 6,
+    "msp_covered": false,
+    "msp_price_per_qtl": null,
+    "msp_year": null
+  },
+  {
+    "id": "mustard",
+    "name": "Mustard (Rapeseed)",
+    "category": "Oilseed",
+    "water_requirement": "low",
+    "water_need_mm_min": 250,
+    "water_need_mm_max": 400,
+    "seasons": [
+      "rabi"
+    ],
+    "growth_duration_days_min": 100,
+    "growth_duration_days_max": 150,
+    "rotation_sensitive": true,
+    "market_volatility": "medium",
+    "bad_predecessors": [
+      "mustard"
+    ],
+    "good_predecessors": [
+      "rice_paddy",
+      "maize",
+      "pearl_millet",
+      "green_gram"
+    ],
+    "description": "India's second-largest rabi oilseed. Grown extensively in Rajasthan, MP, and UP.",
+    "sources": {
+      "water_requirement": "FAO Table 5: Cabbage 350â€“500 mm (Brassica vegetable reference); mustard similar",
+      "season_calendar": "ICAR: Rabi (Octâ€“Nov sowing); major oilseed in eastern/northern India",
+      "market_volatility": "Agmarknet: moderate; edible oil demand provides floor",
+      "rotation": "ICAR: mustard-mustard causes Alternaria blight; cereal rotation preferred"
+    },
+    "family": "Brassicaceae",
+    "bad_predecessor_families": [
+      "Brassicaceae"
+    ],
+    "good_predecessor_families": [
+      "Fabaceae"
+    ],
+    "heat_stress": 35,
+    "cold_stress": 15,
+    "yield_potential": 7,
+    "market_price": 7,
+    "input_cost": 6,
+    "msp_covered": true,
+    "msp_price_per_qtl": 5950,
+    "msp_year": "2025-26"
+  }
+]

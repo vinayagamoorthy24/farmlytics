@@ -1,0 +1,31 @@
+{
+    "nutrient_feeders": {
+        "Poaceae": "heavy",
+        "Solanaceae": "heavy",
+        "Fabaceae": "fixer"
+    },
+    "soil_type_advice": {
+        "Red Loam": [
+            "Add organic compost (FYM/vermicompost) to improve water retention and fertility."
+        ],
+        "Black Cotton Soil (Vertisol)": [
+            "Ensure proper drainage channels; vertisols crack when dry and swell when wet.",
+            "Avoid deep tillage during wet season to prevent compaction."
+        ],
+        "Alluvial Soil": [
+            "Maintain balanced NPK fertilization; alluvial soils respond well to inputs."
+        ],
+        "Sandy Soil": [
+            "Apply mulch to reduce evaporation; sandy soils have poor water retention.",
+            "Use drip irrigation for efficient water delivery."
+        ],
+        "Clayey Delta Soil": [
+            "Avoid waterlogging; use raised bed cultivation during monsoon.",
+            "Apply gypsum if sodicity is a concern."
+        ],
+        "Lateritic Soil": [
+            "Apply lime to correct soil acidity; laterites are often acidic.",
+            "Supplement phosphorus, as laterites fix it heavily."
+        ]
+    }
+}

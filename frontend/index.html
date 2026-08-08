@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmlytics</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* CSS Reset and Variables */
+        :root {
+            --primary-green: #2e7d32;
+            --primary-green-hover: #1b5e20;
+            --text-dark: #1f2937;
+            --text-gray: #4b5563;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+            --font-main: 'Inter', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.5;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background-color: var(--bg-light);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-green);
+            text-decoration: none;
+            letter-spacing: 0.5px;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover {
+            transform: scale(1.02);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        /* Enhanced Functional Hover for Nav Links */
+        .nav-links li a {
+            position: relative;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary-green);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            color: var(--primary-green);
+        }
+
+        .nav-links li a:hover::after,
+        .nav-links li a.active::after {
+            width: 100%;
+        }
+
+        .nav-links li a.active {
+            color: var(--primary-green);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding: 6rem 5% 10rem 5%;
+            background: linear-gradient(to right, rgba(248, 250, 252, 1) 20%, rgba(248, 250, 252, 0.8) 50%, rgba(248, 250, 252, 0) 100%), 
+                        url('bg_image.jpg') center/cover no-repeat;
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 span {
+            color: var(--primary-green);
+        }
+
+        .title-divider {
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-green);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            margin-bottom: 2.5rem;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        /* Enhanced Functional Hover for Button */
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background-color: var(--primary-green);
+            color: var(--white);
+            padding: 1rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease; /* Smoothed all transitions */
+        }
+
+        .btn-primary i {
+            transition: transform 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-green-hover);
+            transform: translateY(-2px); /* Lifts the button slightly */
+            box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3); /* Adds a soft glow/shadow */
+        }
+
+        .btn-primary:hover i {
+            transform: translateX(4px); /* Pushes the arrow slightly to the right */
+        }
+        
+        .btn-primary:active {
+            transform: translateY(0); /* Button presses down when clicked */
+            box-shadow: 0 2px 6px rgba(46, 125, 50, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            .nav-links {
+                gap: 1.5rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero {
+                padding: 4rem 5% 6rem 5%;
+                background: linear-gradient(rgba(248, 250, 252, 0.9), rgba(248, 250, 252, 0.9)), 
+                            url('bg_image') center/cover;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#" class="logo">FARMLYTICS</a>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="analyzer.html">Crop Advisor</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Smart Decisions for<br><span>Sustainable Agriculture</span></h1>
+            <div class="title-divider"></div>
+            <p>Farmlytics helps farmers make informed crop decisions using climate, soil, irrigation, and market data through a transparent rule-based decision engine.</p>
+            <a href="analyzer.html" class="btn-primary">
+                Start Analysis <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>

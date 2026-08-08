@@ -1,0 +1,17 @@
+{
+    "irrigation_capacity": {
+        "rainfed": 0,
+        "canal": 800,
+        "borewell": 1400
+    },
+    "rainfall_cv_thresholds": {
+        "low": 20,
+        "medium": 30
+    },
+    "dry_spell_base_rates": {
+        "low": 12,
+        "medium": 28,
+        "high": 40
+    },
+    "evapotranspiration_penalty": 15
+}

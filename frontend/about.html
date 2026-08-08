@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AgroRisk Advisor – Technical Documentation & Data Sources." />
+    <title>About — AgroRisk Advisor</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css?v=8.0" />
+
+
+</head>
+
+<body>
+    <!-- ========== HEADER / NAV ========== -->
+    <header class="site-header" role="banner">
+        <nav class="nav" aria-label="Primary navigation">
+            <div class="nav__brand">
+                <a href="index.html" style="text-decoration: none; display: flex; align-items: center;">
+                    <span class="nav__title">AgroRisk Advisor</span>
+                </a>
+            </div>
+            <ul class="nav__links" role="list">
+                <li><a href="index.html" class="nav__link">Home</a></li>
+                <li><a href="analyzer.html" class="nav__link">Analyzer</a></li>
+                <li><a href="about.html" class="nav__link nav__link--active" aria-current="page">About</a></li>
+                <li><a href="terms.html" class="nav__link">Terms</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ========== ABOUT CONTENT ========== -->
+    <main class="page-container page-container--narrow">
+        <h1 class="page-heading">Technical Documentation</h1>
+        <p class="page-lead">AgroRisk Advisor is a rule-based deterministic engine combining validated agricultural
+            datasets to assess climate and market risk for crops.</p>
+
+        <section class="doc-section">
+            <h2 class="doc-heading">System Architecture</h2>
+            <p>The application is designed as an offline-first "thick client" where the rules engine executes entirely
+                within the browser. This eliminates API latency, guarantees privacy, and allows the tool to function
+                even on intermittent rural networks.</p>
+
+            <div class="architecture-diagram mt-4">
+                <ol class="doc-list doc-list--numbered">
+                    <li><strong>User Input</strong>: The user selects their district, season, irrigation type, and
+                        optional previous crop.</li>
+                    <li><strong>Offline JS Rule Engine</strong>: The client-side logic processes the input against
+                        pre-loaded geographical profiles and crop parameters.</li>
+                    <li><strong>Knowledge Datasets</strong>: The data points are validated against FAO standards, IMD
+                        district normals, and ICAR advisory models.</li>
+                    <li><strong>Explainable Recommendation</strong>: The final output presents a risk-scored ranking
+                        with deterministic reasoning logic available for every crop.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="doc-section">
+            <h2 class="doc-heading">Scientific Advisory Protocols (v7.5)</h2>
+            <p>Our calculation engines follow primary scientific principles to ensure conservative and safe advice:</p>
+            <ul class="doc-list mt-2">
+                <li><strong>Liebig’s Law of the Minimum (Threshold-Based)</strong>: Aggregate suitability is governed by
+                    the most limiting environmental factor once it crosses a critical threshold (65% risk). This ensures
+                    hard constraints dominate when conditions become high-risk.</li>
+                <li><strong>Multiplicative Reliability (Geometric Mean)</strong>: Confidence is calculated as
+                    $(\text{DataQuality} \times \text{Stability} \times \text{Uncertainty})^{1/3}$. This is a
+                    <strong>Model Reliability Indicator</strong>, not a statistical probability.</li>
+                <li><strong>Effective Rainfall</strong>: Water availability is adjusted for soil texture efficiency
+                    (Infiltration/Runoff) based on FAO standards. Terrain and slope are excluded from the current
+                    prototype but flagged for future calibration.</li>
+                <li><strong>Non-Linear Penalty Curves</strong>: Environmental stress is modeled using power-law
+                    penalties ($Risk \propto Deficit^{1.5}$) to capture the sudden threshold collapse typical in
+                    tropical agriculture.</li>
+            </ul>
+        </section>
+
+        <section class="doc-section">
+            <h2 class="doc-heading">Data Sources Used</h2>
+            <p>The rules engine relies on public governmental and international agricultural data standards. The
+                datasets currently driving the engine include:</p>
+            <ul class="doc-list mt-4">
+                <li><strong>FAO Irrigation & Drainage Paper 56</strong>: Provides baseline crop evapotranspiration
+                    coefficients and minimum/maximum mm water requirements.</li>
+                <li><strong>IMD District Rainfall Statistics</strong>: Indian Meteorological Department normal datasets
+                    provide average annual and seasonal (Kharif, Rabi, Summer) precipitation probabilities.</li>
+                <li><strong>ICAR Crop Calendars & Advisories</strong>: Indian Council of Agricultural Research
+                    guidelines inform seasonal compatibility, duration bounds, and monoculture/rotation penalties.</li>
+                <li><strong>Agmarknet / PIB</strong>: Market commodity spot data is used to tag historical
+                    high-volatility crash risks for specific crops like onions, tomatoes, and potatoes.</li>
+            </ul>
+        </section>
+
+        <section class="doc-section">
+            <h2 class="doc-heading">System Limitations</h2>
+            <div class="alert alert--warning mt-4 mb-4">
+                <strong>Heuristic Model Only</strong>
+                <p>This tool provides heuristic risk indications based on broad geographical averages. It does NOT
+                    replace the necessity for on-ground evaluation.</p>
+            </div>
+            <ul class="doc-list doc-list--x">
+                <li><strong>Soil Health:</strong> Does NOT replace physical soil testing. Variables like pH, EC, and
+                    micro-nutrient profiles are not currently factored.</li>
+                <li><strong>Sub-district Micro-climates:</strong> Uses district-level rainfall averages (IMD normals),
+                    which may not accurately reflect hyper-local rain shadow zones.</li>
+                <li><strong>Market Pricing:</strong> Does NOT forecast real-time market prices or account for specific
+                    mandi trends; volatility is marked heuristically based on historical variance.</li>
+                <li><strong>Expert Consultation:</strong> Does NOT replace on-ground agricultural experts or specific
+                    state extension advisories.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer" role="contentinfo">
+        <p class="site-footer__text">&copy; 2026 AgroRisk Advisor &middot; Data: FAO &middot; IMD &middot; ICAR &middot;
+            Agmarknet &middot; data.gov.in</p>
+    </footer>
+    <!-- Shared Scripts -->
+    <script src="shared.js"></script>
+</body>
+
+</html>

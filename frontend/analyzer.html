@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Farmlytics – Clean & Intelligent Agricultural Risk Analysis Dashboard." />
+    <title>Analyzer — Farmlytics</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lexend:wght@600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=8.1" />
+
+    <style>
+        /* Styles moved to styles.css */
+    </style>
+</head>
+
+<body class="analyzer-body">
+    <!-- ========== HEADER / NAV ========== -->
+    <header class="site-header" role="banner">
+        <nav class="nav" aria-label="Primary navigation">
+            <div class="nav__brand">
+                <a href="index.html" class="nav__brand-link">
+                    <span class="nav__brand-text">
+                        <span class="nav__brand-bold">FARMLYTICS</span>
+                    </span>
+                </a>
+            </div>
+            <!-- Removed Dashboard and Reports links from the Navbar -->
+            <ul class="nav__links" role="list">
+                <li><a href="index.html" class="nav__link">Home</a></li>
+                <li><a href="analyzer.html" class="nav__link nav__link--active" aria-current="page">Analyzer</a></li>
+                <li><a href="about.html" class="nav__link">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ========== MAIN ANALYZER CONTAINER ========== -->
+    <main class="analyzer-layout">
+        <h1 class="sr-only">Farmlytics - Crop Risk Analyzer</h1>
+
+        <div class="analyzer-grid">
+            <!-- ===== SIDEBAR PARAMETERS PANEL ===== -->
+            <aside class="analyzer-sidebar" aria-label="Analysis parameters">
+                <div class="sidebar-header">
+                    <h2 class="sidebar-title">Analysis Parameters</h2>
+                </div>
+
+                <form id="advisor-form" class="advisor-form" aria-label="Crop risk analysis form">
+                    <!-- Field 1: District -->
+                    <div class="form-group">
+                        <label for="select-district" class="form-label">District</label>
+                        <div class="select-wrapper">
+                            <select id="select-district" class="form-select" required>
+                                <option value="" disabled selected>Select district</option>
+                            </select>
+                            <svg class="select-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div id="district-meta" class="district-info" hidden></div>
+                    </div>
+
+                    <!-- Field 2: Season -->
+                    <div class="form-group">
+                        <label for="select-season" class="form-label">Season</label>
+                        <div class="select-wrapper">
+                            <select id="select-season" class="form-select" required>
+                                <option value="" disabled selected>Select season</option>
+                                <option value="kharif">Kharif</option>
+                                <option value="rabi">Rabi</option>
+                                <option value="summer">Summer</option>
+                            </select>
+                            <svg class="select-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Field 3: Irrigation Type -->
+                    <div class="form-group">
+                        <label for="select-irrigation" class="form-label">Irrigation Type</label>
+                        <div class="select-wrapper">
+                            <select id="select-irrigation" class="form-select" required>
+                                <option value="" disabled selected>Select irrigation type</option>
+                                <option value="rainfed">Rainfed</option>
+                                <option value="canal">Canal</option>
+                                <option value="borewell">Borewell</option>
+                            </select>
+                            <svg class="select-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Field 4: Previous Crop -->
+                    <div class="form-group">
+                        <label for="select-prev-crop" class="form-label">
+                            Previous Crop <span class="form-optional">(Optional)</span>
+                        </label>
+                        <div class="select-wrapper">
+                            <select id="select-prev-crop" class="form-select">
+                                <option value="">None / First crop</option>
+                            </select>
+                            <svg class="select-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Section: Farming Practices -->
+                    <fieldset class="form-group form-fieldset">
+                        <legend class="form-label" style="padding: 0 0.5rem; background: transparent;">Farming Practices</legend>
+                        <div class="checkbox-group">
+                            <label class="form-checkbox-label">
+                                <input type="checkbox" id="check-residue" class="form-checkbox">
+                                <span class="checkbox-text">Crop Residue Incorporated</span>
+                            </label>
+                            <label class="form-checkbox-label">
+                                <input type="checkbox" id="check-fertilizer" class="form-checkbox">
+                                <span class="checkbox-text">Optimal Fertilizer Use</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Divider line before CTA button -->
+                    <div class="sidebar-divider" aria-hidden="true"></div>
+
+                    <!-- Primary CTA Button -->
+                    <button type="submit" id="btn-analyze" class="btn-primary btn-analyze-cta">
+                        <span class="btn-primary__text">Analyze Crop Suitability</span>
+                        <span class="btn-primary__loader" aria-hidden="true"></span>
+                    </button>
+                </form>
+            </aside>
+
+            <!-- ===== MAIN RESULTS CONTAINER ===== -->
+            <section class="analyzer-main">
+                <!-- Initial Empty State -->
+                <div id="results-placeholder" class="results-placeholder">
+                    <div class="placeholder-graphic">
+                        <svg width="72" height="72" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <!-- Soil Mound -->
+                            <path d="M20 72C20 62.0589 32.536 54 48 54C63.464 54 76 62.0589 76 72V74H20V72Z" fill="#855B41"/>
+                            <!-- Left Leaf -->
+                            <path d="M48 58C48 38 32 26 16 34C16 52 32 60 48 58Z" fill="#4ADE80" stroke="#22C55E" stroke-width="2" stroke-linejoin="round"/>
+                            <!-- Right Leaf -->
+                            <path d="M48 60C48 40 66 28 82 36C82 54 66 62 48 60Z" fill="#22C55E" stroke="#16A34A" stroke-width="2" stroke-linejoin="round"/>
+                            <!-- Stem -->
+                            <path d="M48 64V46" stroke="#166534" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h2 class="placeholder-title">Ready for Analysis</h2>
+                    <p class="placeholder-subtitle">Select your parameters in the sidebar to get intelligent crop recommendations.</p>
+                </div>
+
+                <!-- Analysis Results Section -->
+                <div id="results-section" class="results-section" aria-live="polite" aria-label="Analysis results" hidden>
+                    <!-- Summary bar -->
+                    <div class="results-summary" id="results-summary"></div>
+
+                    <!-- Climate Risk Advisory -->
+                    <div id="climate-risk-advisory" class="advisory-panel" hidden></div>
+
+                    <!-- Soil Health Advisory -->
+                    <div id="soil-health-advisory" class="advisory-panel" hidden></div>
+
+                    <!-- Top Recommendation -->
+                    <div id="top-recommendation" class="top-recommendation" hidden></div>
+
+                    <!-- Filter pills -->
+                    <div class="filter-bar" role="group" aria-label="Filter results by risk level">
+                        <button type="button" class="filter-pill filter-pill--active" data-filter="all">All</button>
+                        <button type="button" class="filter-pill" data-filter="safe">Safe</button>
+                        <button type="button" class="filter-pill" data-filter="moderate">Moderate</button>
+                        <button type="button" class="filter-pill" data-filter="high">High Risk</button>
+                    </div>
+
+                    <!-- Cards grid -->
+                    <div id="results-grid" class="results-grid"></div>
+
+                    <!-- Print & Share Actions -->
+                    <div class="results-actions">
+                        <button type="button" id="btn-view-report" class="btn-primary btn-primary--report report-action-btn">
+                            <span aria-hidden="true">📋</span>
+                            <span class="btn-primary__text">View Advisory Report</span>
+                        </button>
+                        <button type="button" id="btn-print" class="btn-secondary report-action-btn" onclick="window.print()">
+                            <span aria-hidden="true">🖨️</span> Quick Print
+                        </button>
+                    </div>
+
+                    <!-- Advisory Disclaimer -->
+                    <div class="alert alert--warning advisory-disclaimer">
+                        <strong>Disclaimer:</strong> This advisory is indicative only and does not carry legal sanctity.
+                        Verify with your local KVK or District Agriculture Officer before planting.
+                        <a href="terms.html">Full Terms →</a>
+                    </div>
+
+                    <!-- Telemetry -->
+                    <p id="telemetry" class="telemetry-text"></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- ========== ADVISORY REPORT OVERLAY ========== -->
+    <div id="report-overlay" class="report-overlay" role="dialog" aria-modal="true" aria-labelledby="report-overlay-title" hidden>
+        <div class="report-overlay__backdrop"></div>
+        <div class="report-overlay__panel">
+            <header class="report-overlay__toolbar">
+                <h2 id="report-overlay-title" class="report-overlay__toolbar-title">Advisory Report</h2>
+                <div class="report-overlay__toolbar-actions">
+                    <button type="button" id="btn-report-print" class="btn-report-action" aria-label="Print report">
+                        <span aria-hidden="true">🖨️</span> Print
+                    </button>
+                    <button type="button" id="btn-report-pdf" class="btn-report-action btn-report-action--pdf" aria-label="Download PDF">
+                        <span aria-hidden="true">📥</span> Download PDF
+                    </button>
+                    <button type="button" id="btn-report-close" class="btn-report-close" aria-label="Close report">
+                        ✕
+                    </button>
+                </div>
+            </header>
+            <div class="report-overlay__content" id="report-render-target">
+                <!-- advisory_report.js renders here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer" role="contentinfo">
+        <p class="site-footer__text">Farmlytics &copy; 2025 &bull; Smart Decisions, Better Yields</p>
+    </footer>
+
+    <!-- ========== SHARED EXPLANATION MODAL ========== -->
+    <div
+      id="explanation-modal"
+      class="explanation-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="explanation-modal-title"
+      hidden
+    >
+      <div class="explanation-overlay__backdrop" id="explanation-backdrop"></div>
+      <div class="explanation-overlay__panel">
+        <div class="explanation-overlay__header">
+          <h2 id="explanation-modal-title" class="explanation-overlay__title">Decision Report</h2>
+          <button
+            type="button"
+            class="explanation-overlay__close"
+            id="explanation-modal-close"
+            aria-label="Close decision report"
+          >✕</button>
+        </div>
+        <div class="explanation-overlay__body" id="explanation-modal-body">
+          <!-- Populated dynamically by app.js on button click -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== FLOATING COMPARE BAR ========== -->
+    <div id="compare-bar" class="compare-bar" role="region" aria-label="Crop comparison control bar" hidden>
+        <div class="compare-bar__content">
+            <div class="compare-bar__info">
+                <span class="compare-bar__icon" aria-hidden="true">⚖️</span>
+                <span class="compare-bar__count" id="compare-bar-count">0 crops selected</span>
+            </div>
+            <div class="compare-bar__actions">
+                <button type="button" id="btn-compare-clear" class="btn-secondary btn-secondary--sm">Clear</button>
+                <button type="button" id="btn-compare-launch" class="btn-primary btn-primary--sm">
+                    Compare Now →
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== CROP COMPARISON MODAL ========== -->
+    <div
+      id="compare-modal"
+      class="explanation-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="compare-modal-title"
+      hidden
+    >
+      <div class="explanation-overlay__backdrop" id="compare-backdrop"></div>
+      <div class="explanation-overlay__panel explanation-overlay__panel--wide">
+        <div class="explanation-overlay__header">
+          <h2 id="compare-modal-title" class="explanation-overlay__title">⚖️ Side-by-Side Crop Comparison</h2>
+          <button
+            type="button"
+            class="explanation-overlay__close"
+            id="compare-modal-close"
+            aria-label="Close comparison"
+          >✕</button>
+        </div>
+        <div class="explanation-overlay__body" id="compare-modal-body">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script type="module" src="app.js?v=8.5"></script>
+</body>
+</html>
